@@ -2,10 +2,10 @@
 const args = process.argv.slice(2);
 
 // Implement below:
-
-
-let output = "Hello World my name is " + args[0] +" "+ args[1];
-
-
+let str = args[0];
+let output = '';
+for (let i = str.length - 1; i>=0; i--){
+        output += str[i];
+}
 // Do not change:
 console.log(output);
